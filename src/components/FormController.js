@@ -2,6 +2,7 @@ import React from 'react';
 import ContentForm from './ContentForm';
 import '../styles/formController.css';
 import '../styles/form.css';
+import Field from './Field';
 
 class FormController extends React.Component {
   constructor(props){
@@ -49,11 +50,14 @@ class FormController extends React.Component {
       if (this.fields[field].required) {
         this.requiredFields.add(field);
       }
+      const fieldAttr = {
+        field,
+        classNameContent: this.fields[field]['full-width'] ? 'fullWidth' : 'noFullWidth',
+        classNameLabel: `fieldName${this.fields[field].required ? ' required' : ''}`,
+        onChangeEvent: this.fieldOnChange,
+      }
       fieldElements.push(
-        <div key={field} className={this.fields[field]['full-width'] ? 'fullWidth' : 'noFullWidth'}>
-          <p className={`fieldName${this.fields[field].required ? ' required' : ''}`}>{field}</p>
-          <input type="text" name="fieldElement" className="inputField" onChange={this.fieldOnChange} id={field}/>
-        </div>
+        <Field key={field} fieldAttr={fieldAttr}></Field>
       );
     }
     return fieldElements;
