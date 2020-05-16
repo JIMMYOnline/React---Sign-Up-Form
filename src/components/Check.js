@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/check.css';
 
 class Check extends React.Component {
   constructor(props){

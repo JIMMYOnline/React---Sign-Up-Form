@@ -2,6 +2,7 @@ import React from 'react';
 import HeadForm from './HeadForm';
 import FormDescription from './FormDescription';
 import FooterForm from './FooterForm';
+import '../styles/contentForm.css';
 
 
 class ContentForm extends React.Component {

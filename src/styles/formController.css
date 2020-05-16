@@ -1,0 +1,18 @@
+.required::after {
+  content: ' *';
+  color: red;
+}
+.fullWidth {
+  width: 98%;
+}
+.noFullWidth {
+  width: 48%;
+  margin-right: 2%;
+}
+.inputField {
+  width: 100%;
+}
+.fieldName {
+  margin-bottom: 3px;
+  font-weight: 600;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import ContentForm from './ContentForm';
+import '../styles/formController.css';
+import '../styles/form.css';
 
-class FormContoller extends React.Component {
+class FormController extends React.Component {
   constructor(props){
     super(props);
     this.fields = props.fields;
@@ -68,4 +70,4 @@ class FormContoller extends React.Component {
   }
 }
 
-export default FormContoller;
+export default FormController;
