@@ -1,0 +1,58 @@
+.required::after {
+  content: ' *';
+  color: red;
+}
+
+.fullWidth {
+  width: 98%;
+}
+
+.noFullWidth {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.form {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.inputField {
+  width: 100%;
+}
+
+.formDescription {
+  width: 100%;
+}
+
+.headForm {
+  border: 1px solid black;
+}
+
+.alert, .check, .formDescription {
+  display: flex;
+  align-items: center;
+}
+
+.contentForm {
+  width: calc(100% - 400px);
+  border: 1px solid gray;
+  padding: 0 2% 2% 2%;
+  padding-top: 0;
+  background-color: lightsteelblue;
+  margin: auto;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.fieldName {
+  margin-bottom: 3px;
+  font-weight: 600;
+}
